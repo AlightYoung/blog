@@ -1,0 +1,120 @@
+    *{
+        margin:0;
+        padding:0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    body{
+        background-color:#000;
+        background-size: cover;
+        color:#fff; 
+        font-family: Tahoma，Arial，Verdana "宋体";
+        width: 100%;
+        height:100vh;
+    }
+    .container-fuild{
+        box-sizing: border-box;
+        width: 100%;
+        height:8vh;
+        line-height: 8vh;
+        text-transform: uppercase;
+        background-color:#000;
+        padding: .5em;
+        letter-spacing: 1px;
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: .3em;
+        cursor: pointer;
+        font-weight: 400;
+    }
+    .logo a{
+        color: #fff;
+    }
+    .logo a:hover{
+        text-decoration: none;
+    }
+    .text-right a{
+        position: relative;
+        display: inline-block;
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 1.25em;
+        padding: 0 1em;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    a:focus{
+        outline: none;
+    }
+    .text-right a::after{
+        content: "]";
+        margin-left: 10px;
+        transform: translateX(-20px);
+        opacity: 0;
+        display: inline-block;
+        transition: transform 0.3s, opacity 0.2s;
+    }
+    .text-right a::before{
+        content: "[";
+        margin-right: 10px;
+        transform: translateX(20px);
+        opacity: 0;
+        display: inline-block;
+        transition: transform 0.3s, opacity 0.2s;
+    }
+    .text-right a:hover::before,
+    .text-right a:hover::after,
+    .text-right a:focus::before,
+    .text-right a:focus::after {
+        opacity: 1;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+    .text-right .menu{
+        width: 5em;
+        height: 7vh;
+        color: white;
+        display: none;
+    }
+    .mobilebar{
+        padding: 0;
+        display: none;
+    }
+    .mobilebar .row{
+        width: 100%;
+        font-size:1.25em;
+        height: 2em;
+        line-height: 2em;
+        background-color:#000;
+        margin:0;
+        padding-left: 1em;
+        text-transform:capitalize;
+        box-sizing: border-box;
+        border-bottom: 1px solid #2c2e37;
+    }
+    .mobilebar .row:hover{
+        background-color:#2c2e37;
+    }
+    .bg{
+        width:362px;
+        height:362px;
+        background-image: url(../images/bg.jpg);
+        margin-top: 20vh;
+    }
+     @media screen and (max-width:844px){
+       .text-right .a{
+            display: none;
+       }
+       .text-right .menu{
+            display: inline-block;
+        }
+        .container-fuild{
+            padding: 0;
+            border-bottom: 1px solid #2c2e37;
+        } 
+    }
