@@ -16,11 +16,6 @@
  	.layui-col-xs3{
  		padding-right: 2em;
  	}
- 	.layui-field-box{
- 		padding-left:2em;
- 		padding-right:2em;
- 		letter-spacing: .05em;
- 	}
  	@media screen and (max-width:336px){
  		.layui-nav-item{
  			width: 25vw;
