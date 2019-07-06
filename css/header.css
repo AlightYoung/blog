@@ -16,6 +16,9 @@
  	.layui-col-xs3{
  		padding-right: 2em;
  	}
+ 	.layui-elem-field {
+        text-align: center;
+    
  	@media screen and (max-width:336px){
  		.layui-nav-item{
  			width: 25vw;
