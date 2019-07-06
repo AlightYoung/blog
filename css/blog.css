@@ -21,6 +21,9 @@
  		padding-right:2em;
  		letter-spacing: .05em;
  	}
+ 	.layui-elem-field {
+        text-align: center;
+    }
  	@media screen and (max-width:336px){
  		.layui-nav-item{
  			width: 25vw;
