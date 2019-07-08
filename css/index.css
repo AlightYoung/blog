@@ -57,7 +57,7 @@
         outline: none;
     }
     .text-right a::after{
-        content: "]";
+        content: "」";
         margin-left: 10px;
         transform: translateX(-20px);
         opacity: 0;
@@ -65,7 +65,7 @@
         transition: transform 0.3s, opacity 0.2s;
     }
     .text-right a::before{
-        content: "[";
+        content: "「";
         margin-right: 10px;
         transform: translateX(20px);
         opacity: 0;
