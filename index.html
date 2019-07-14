@@ -10,35 +10,36 @@
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <script type="text/javascript" src="js/mobilebar.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-    <div class="container-fuild">
-            <div class="text-left logo col-xs-6"><a href="https://www.alight.online">alight</a></div>
-            <div class="text-right col-xs-6">
-                <a href="blogs/blog.html" class="a">blog</a><a href="blogs/about.html" class="a">about</a><a href="blogs/friends.html" class="a">friends</a>
-                <span class="menu text-right"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
-            </div>
+
+    <div class="container-fulid" id="home">
+        <ul id="top" class="navbar-fixed-top">
+            <li class="pull-left logo"><i class="fa fa-snowflake-o" aria-hidden="true"></i>alight</li>
+            <li class="pull-right mobilebar"><i class="fa fa-bars" aria-hidden="true"></i></li>
+            <li class="pull-right items"><a href="#contact">contact</a></li>
+            <li class="pull-right items"><a href="#about">about</a></li>
+            <li class="pull-right items"><a href="#blog">blog</a></li>
+            <li class="pull-right items active"><a href="#home">home</a></li>
+        </ul>
+        <div class="search">
+            <h1>welcome</h1>
+            <form action="https://www.baidu.com/baidu" target="_new" method="get">
+                <input type="text" name="word" align="center" placeholder="Search" autocomplete="off" /><input type="submit" value="Baidu" class="btn-primary"/> 
+            </form>
+        </div>
+        <div class="totop">
+            <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></div>
+        </div>
+    <div class="container-fulid" id="blog">
+        <div style="font-size: 3em;">My Blog</div>
     </div>
-    <div class="container mobilebar">
-         <a href="blogs/blog.html">
-            <div class="row text-left">
-               blog
-            </div>
-        </a>
-        <a href="blogs/about.html">
-           <div class="row text-left">
-              about
-           </div>
-        </a>
-        <a href="blogs/friends.html">
-            <div class="row text-left">
-                friends
-            </div>
-        </a>
-     </div>
-     <div class="bg center-block text-center">
-         
-     </div>
-     <script type="text/javascript" src="js/dynamicline.js"></script>
+    <div class="container-fulid" id="about">
+        <div style="font-size: 3em;">About Me</div>
+    </div>
+    <div class="container-fulid" id="contact">
+        <div style="font-size: 3em;">Contact Me</div>
+    </div>
 </body>
 </html>
