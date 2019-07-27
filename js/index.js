@@ -10,6 +10,7 @@ $(function(){
                 $(".mobileitems").slideUp();
             }
         });
+        //手机菜单点击之后关闭菜单
         $(".mobileitem").on("click",function(){
             $(".mobileitems").hide();
         });
