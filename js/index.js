@@ -12,12 +12,12 @@ $(function(){
             }else if(to=="#about"){
                 $("#top").css("background-color","#38ada9");
             }else if(to=="#contact"){
-                $("#top").css("background-color","#f8a5c2");
+                $("#top").css("background-color","#a4b0be");
             }
         });
         $(window).on("scroll",function(){
             if($(window).scrollTop()>=($(window).height())*3){
-                $("#top").css("background-color","#f8a5c2");
+                $("#top").css("background-color","#a4b0be");
                 $("li:eq(2)").children().addClass("active");
                 $("li:eq(2)").siblings().children().removeClass("active");
                 $(".totop").css("opacity",".5");
