@@ -1,5 +1,5 @@
-$(".mobileitems").hide();
 $(function(){
+$(".mobileitems").hide();
         var a = 0;
         //手机菜单的开关
         $(".mobilebar").on("click",function(){
@@ -12,6 +12,7 @@ $(function(){
         });
         //手机菜单点击之后关闭菜单
         $(".mobileitem").on("click",function(){
+            a++;
             $(".mobileitems").hide();
         });
         //分类点击滑动样式及分类切换
