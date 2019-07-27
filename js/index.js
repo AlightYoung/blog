@@ -1,5 +1,5 @@
+$(".mobileitems").hide();
 $(function(){
-    $(".mobileitems").hide();
         var a = 0;
         //手机菜单的开关
         $(".mobilebar").on("click",function(){
