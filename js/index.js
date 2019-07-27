@@ -36,26 +36,26 @@ $(function(){
             if($(window).scrollTop()>=($(window).height())*3){
                 $("#top").css("background-color","#a4b0be");
                 $(".mobileitems").css("background-color","#a4b0be");
-                $("li:eq(2)").children().addClass("active");
-                $("li:eq(2)").siblings().children().removeClass("active");
+                $(".contact").addClass("active");
+                $(".contact").parent().siblings().children().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=($(window).height())*2){
                 $("#top").css("background-color","#38ada9");
                 $(".mobileitems").css("background-color","#38ada9");
-                $("li:eq(3)").children().addClass("active");
-                $("li:eq(3)").siblings().children().removeClass("active");
+                $(".about").addClass("active");
+                $(".about").parent().siblings().children().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=$(window).height()){
                 $("#top").css("background-color","#6a89cc");
                 $(".mobileitems").css("background-color","#6a89cc");
-                $("li:eq(4)").children().addClass("active");
-                $("li:eq(4)").siblings().children().removeClass("active");
+                $(".blog").addClass("active");
+                $(".blog").parent().siblings().children().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else{
                 $("#top").css("background-color","#fab1a0");
                 $(".mobileitems").css("background-color","#fab1a0");
-                $("li:eq(5)").children().addClass("active");
-                $("li:eq(5)").siblings().children().removeClass("active");
+                $(".home").addClass("active");
+                $(".home").parent().siblings().children().removeClass("active");
                 $(".totop").css("opacity","0"); 
             }
             
