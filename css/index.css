@@ -7,6 +7,7 @@
     margin: 0;
     padding:0;
     list-style: none;
+    font-family: montserrat;
 }
 ul{
     margin-bottom: 0;
@@ -21,18 +22,15 @@ ul{
     justify-content: center;
     align-items: center;
 }
-#blog{
-    background-color: #4a69bd;
+#blog,#about,#contact{
+    padding-top: 10vh;
+    text-align: center;
+}
+#blog,#contact{
+    background-color: #f9fafc;
 }
 #about{
-    background-color: #079992;
-}
-#contact{
-    background-color:#747d8c;
-}
-#blog,#about,#contact{  
-    text-align: center;
-    padding-top: 10vh;
+    background-color: white;
 }
 a{
     color:#57606f;
@@ -92,7 +90,6 @@ form{
     box-sizing: border-box;
     font-size:1.6em;
     margin-bottom: 6em;
-    font-family: montserrat;
 }
 input[type="text"]{
     width: 4em;
@@ -156,6 +153,7 @@ h1{
     position: fixed;
     top:5em;
     touch-action:none;
+    z-index: 10000;
 }
 .mobileitem{
     width: 100%;
@@ -163,6 +161,67 @@ h1{
     height:2em;
     line-height: 2em;
     box-sizing: border-box;
+}
+.row{
+    width: 80%;
+    margin:0 auto;
+}
+.blog-title{
+    font-size: 2em;
+    border-bottom: 2px solid #6a89cc;
+    padding: .5em .5em;
+    color:#6a89cc;
+    position: relative;
+}
+.blog-title::before{
+    content: "";
+    width: .5em;
+    height: .5em;
+    background-color:#6a89cc; 
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%,50%) rotate(45deg);
+}
+.about-title{
+    font-size: 2em;
+    border-bottom: 2px solid #38ada9;
+    padding: .5em .5em;
+    color:#38ada9;
+    position: relative;
+}
+.about-title::before{
+    content: "";
+    width: .5em;
+    height: .5em;
+    background-color:#38ada9; 
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%,50%) rotate(45deg);
+}
+.contact-title{
+    font-size: 2em;
+    border-bottom: 2px solid #a4b0be;
+    padding: .5em .5em;
+    color:#a4b0be;
+    position: relative;
+}
+.contact-title::before{
+    content: "";
+    width: .5em;
+    height: .5em;
+    background-color:#a4b0be; 
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%,50%) rotate(45deg);
+}
+.about-title,.blog-title,.contact-title{
+    margin-bottom: 2em;
+}
+img{
+    display: inline-block;
 }
 @media(max-width: 786px){
     .search{
