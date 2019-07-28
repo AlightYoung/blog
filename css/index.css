@@ -53,6 +53,7 @@ body{
     transition: all .25s linear;
     position: fixed;
     top:0;
+    touch-action:none;
 }
 li{
     transition: all .5s linear;
@@ -154,6 +155,7 @@ h1{
     text-align: center;
     position: fixed;
     top:5em;
+    touch-action:none;
 }
 .mobileitem{
     width: 100%;
@@ -187,6 +189,5 @@ h1{
         padding-left: .1em;
         letter-spacing: .1em;
     }
-
     
 }

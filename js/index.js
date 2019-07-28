@@ -15,12 +15,12 @@ $(".mobileitems").hide();
             a++;
             $(".mobileitems").hide();
         });
-        //分类点击滑动样式及分类切换
+        //分类点击滑动样式及分类切换 
         $('a').click(function(){
-            //根据a标签的href转换为id选择器，获取id元素所处的位置，并高度减50px（这里根据需要自由设置）
             $('html,body').animate({scrollTop: ($($(this).attr('href')).offset().top )},500);
             $(this).addClass("active");
-            $(this).parent().siblings().children().removeClass("active");
+            $(this).siblings().removeClass("active");
+            //----------------多余删掉--------------------
             // var to = $(this).attr("href");
             // if(to=="#home"){    
             //     $("#top").css("background-color","#fab1a0");
@@ -32,35 +32,65 @@ $(".mobileitems").hide();
             //     $("#top").css("background-color","#a4b0be");
             // }
         });
+        //禁止导航栏滚动
+        //to do...
+        
+        //页面初始化scrollTop判断
+         if($(window).scrollTop()>=($(window).height())*3){
+                $("#top").css("background-color","#a4b0be");
+                $(".mobileitems").css("background-color","#a4b0be");
+                $(".contact").addClass("active");
+                $(".contact").siblings().removeClass("active");
+                $(".totop").css("opacity",".5");
+            }else if($(window).scrollTop()>=($(window).height())*2){
+                $("#top").css("background-color","#38ada9");
+                $(".mobileitems").css("background-color","#38ada9");
+                $(".about").addClass("active");
+                $(".about").siblings().removeClass("active");
+                $(".totop").css("opacity",".5");
+            }else if($(window).scrollTop()>=$(window).height()){
+                $("#top").css("background-color","#6a89cc");
+                $(".mobileitems").css("background-color","#6a89cc");
+                $(".blog").addClass("active");
+                $(".blog").siblings().removeClass("active");
+                $(".totop").css("opacity",".5");
+            }else{
+                $("#top").css("background-color","#fab1a0");
+                $(".mobileitems").css("background-color","#fab1a0");
+                $(".home").addClass("active");
+                $(".home").siblings().removeClass("active");
+                $(".totop").css("opacity","0"); 
+            }
         //页面滚动监听改变navbar颜色及当前分类切换
         $(window).on("scroll",function(){
             if($(window).scrollTop()>=($(window).height())*3){
                 $("#top").css("background-color","#a4b0be");
                 $(".mobileitems").css("background-color","#a4b0be");
                 $(".contact").addClass("active");
-                $(".contact").parent().siblings().children().removeClass("active");
+                $(".contact").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=($(window).height())*2){
                 $("#top").css("background-color","#38ada9");
                 $(".mobileitems").css("background-color","#38ada9");
                 $(".about").addClass("active");
-                $(".about").parent().siblings().children().removeClass("active");
+                $(".about").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=$(window).height()){
                 $("#top").css("background-color","#6a89cc");
                 $(".mobileitems").css("background-color","#6a89cc");
                 $(".blog").addClass("active");
-                $(".blog").parent().siblings().children().removeClass("active");
+                $(".blog").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else{
                 $("#top").css("background-color","#fab1a0");
                 $(".mobileitems").css("background-color","#fab1a0");
                 $(".home").addClass("active");
-                $(".home").parent().siblings().children().removeClass("active");
+                $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
             }
             
         });
+        //点击返回顶部
         $(".totop").click(function totop(){
              $('body,html').animate({scrollTop:0},500);
         });
