@@ -221,7 +221,16 @@ h1{
     margin-bottom: 2em;
 }
 img{
+    width:100%;
+    float: left;
     display: inline-block;
+}
+.hover{
+    transition: all .25s ease;
+}
+
+.hover:hover{
+    background-color:#6a89cc;
 }
 @media(max-width: 786px){
     .search{
@@ -247,6 +256,9 @@ img{
     .logo{
         padding-left: .1em;
         letter-spacing: .1em;
+    }
+    img{
+        height:50vh;
     }
     
 }

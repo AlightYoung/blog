@@ -6,14 +6,20 @@ $(".mobileitems").hide();
             a++;
             if(a%2!=0){
                 $(".mobileitems").slideDown();
+                $(".bar").removeClass("fa-bars");
+                $(".bar").addClass("fa-chevron-up");
             }else{
                 $(".mobileitems").slideUp();
+                $(".bar").removeClass("fa-chevron-up");
+                $(".bar").addClass("fa-bars");
             }
         });
         //手机菜单点击之后关闭菜单
         $(".mobileitem").on("click",function(){
             a++;
-            $(".mobileitems").hide();
+            $(".mobileitems").slideUp();
+            $(".bar").removeClass("fa-chevron-up");
+            $(".bar").addClass("fa-bars");
         });
         //分类点击滑动样式及分类切换 
         $('a').click(function(){
