@@ -9,6 +9,10 @@
     list-style: none;
     font-family: montserrat;
 }
+.theme-btn{
+    background-color: #2d3436;
+    color:#fff;
+}
 ul{
     margin-bottom: 0;
 }
@@ -17,7 +21,7 @@ ul{
     box-sizing: border-box;
 }
 #home{
-    background-color:#e17055;
+    background-color:#fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,10 +37,11 @@ ul{
     background-color: white;
 }
 a{
-    color:#57606f;
+    color:#7f8fa6;
 }
 a:hover{
-    color: #000;
+    cursor: pointer;
+    color: #f5f6fa;
     text-decoration: none;
 }
 body{
@@ -46,7 +51,7 @@ body{
 #top{
     width: 100%;
     height:5em;
-    background-color: #fab1a0;
+    background-color:#2d3436;
     z-index: 100000;
     transition: all .25s linear;
     position: fixed;
@@ -77,7 +82,7 @@ li{
     color: white;
 }
 .active{
-    color: #000;
+    color:#f5f6fa;
 }
 form{
     color: black;
@@ -92,14 +97,15 @@ form{
     margin-bottom: 6em;
 }
 input[type="text"]{
-    width: 4em;
-    height: 2.4em;
+    width: 10rem;
+    height: 5.6rem;
+    line-height: 5.6rem;
     border:none;
-    border-radius:1.2em 0 0 1.2em;
+    border-radius:5.6rem 0 0 5.6rem;
     text-align: center;
     transition: all .25s ease;
     box-sizing: border-box;
-    border:1px solid #337ab7;
+    border:1px solid #2d3436;
     font-size: 1.25em;
     overflow: hidden;
 }
@@ -108,10 +114,10 @@ input[type="text"]:focus,input[type="text"]:hover{
     width: 16em;
 }
 input[type="submit"]{
-    width: 4em;
-    height: 2.4em;
+    width: 10rem;
+    height: 5.6rem;
     border:none;
-    border-radius: 0 1.2em 1.2em 0;
+    border-radius: 0 5.6rem 5.6rem 0;
     font-size: 1.25em;
 }
 input[type="submit"]:focus{
@@ -121,7 +127,7 @@ h1{
     margin:0;
     padding:0;
     height: 2em;
-    color: #f1f2f6;
+    color: #2d3436;
     font-size:3em;
     line-height:2em;
     text-align: center;
@@ -148,7 +154,7 @@ h1{
     width: 100%;
     height:10em;
     overflow: hidden;
-    background-color: #fab1a0;
+    background-color:#2d3436;
     text-align: center;
     position: fixed;
     top:5em;
@@ -256,9 +262,6 @@ img{
     .logo{
         padding-left: .1em;
         letter-spacing: .1em;
-    }
-    img{
-        height:50vh;
     }
     
 }

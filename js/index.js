@@ -40,29 +40,22 @@ $(".mobileitems").hide();
         });
         //禁止导航栏滚动
         //to do...
+        //css样式 touch-action:none;
         
         //页面初始化scrollTop判断
          if($(window).scrollTop()>=($(window).height())*3){
-                $("#top").css("background-color","#a4b0be");
-                $(".mobileitems").css("background-color","#a4b0be");
                 $(".contact").addClass("active");
                 $(".contact").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=($(window).height())*2){
-                $("#top").css("background-color","#38ada9");
-                $(".mobileitems").css("background-color","#38ada9");
                 $(".about").addClass("active");
                 $(".about").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=$(window).height()){
-                $("#top").css("background-color","#6a89cc");
-                $(".mobileitems").css("background-color","#6a89cc");
                 $(".blog").addClass("active");
                 $(".blog").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else{
-                $("#top").css("background-color","#fab1a0");
-                $(".mobileitems").css("background-color","#fab1a0");
                 $(".home").addClass("active");
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
@@ -70,26 +63,18 @@ $(".mobileitems").hide();
         //页面滚动监听改变navbar颜色及当前分类切换
         $(window).on("scroll",function(){
             if($(window).scrollTop()>=($(window).height())*3){
-                $("#top").css("background-color","#a4b0be");
-                $(".mobileitems").css("background-color","#a4b0be");
                 $(".contact").addClass("active");
                 $(".contact").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=($(window).height())*2){
-                $("#top").css("background-color","#38ada9");
-                $(".mobileitems").css("background-color","#38ada9");
                 $(".about").addClass("active");
                 $(".about").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else if($(window).scrollTop()>=$(window).height()){
-                $("#top").css("background-color","#6a89cc");
-                $(".mobileitems").css("background-color","#6a89cc");
                 $(".blog").addClass("active");
                 $(".blog").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
             }else{
-                $("#top").css("background-color","#fab1a0");
-                $(".mobileitems").css("background-color","#fab1a0");
                 $(".home").addClass("active");
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
