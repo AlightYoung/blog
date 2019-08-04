@@ -38,7 +38,7 @@ ul{
     min-height: 100vh;
 }
 a{
-    color:#7f8fa6;
+    color:#aaa;
 }
 a:hover{
     cursor: pointer;
@@ -58,6 +58,7 @@ body{
     position: fixed;
     top:0;
     touch-action:none;
+    box-shadow: 0 1px 1px 1px #3e4547;
 }
 li{
     transition: all .5s linear;
@@ -98,6 +99,7 @@ form{
     margin-bottom: 6em;
 }
 input[type="text"]{
+    display: inline-block;
     width: 10rem;
     height: 5.6rem;
     line-height: 5.6rem;
@@ -115,6 +117,7 @@ input[type="text"]:focus,input[type="text"]:hover{
     width: 16em;
 }
 input[type="submit"]{
+    display: inline-block;
     width: 10rem;
     height: 5.6rem;
     transition: all .25s ease;
@@ -176,59 +179,24 @@ h1{
     width: 80%;
     margin:0 auto;
 }
-.blog-title{
+.title{
     font-size: 2em;
-    border-bottom: 2px solid #6a89cc;
+    border-bottom: 2px solid #2d3436;
     padding: .5em .5em;
-    color:#6a89cc;
+    color:#2d3436;
     position: relative;
-}
-.blog-title::before{
-    content: "";
-    width: .5em;
-    height: .5em;
-    background-color:#6a89cc; 
-    position: absolute;
-    bottom:0%;
-    left:50%;
-    transform: translate(-50%,50%) rotate(45deg);
-}
-.about-title{
-    font-size: 2em;
-    border-bottom: 2px solid #38ada9;
-    padding: .5em .5em;
-    color:#38ada9;
-    position: relative;
-}
-.about-title::before{
-    content: "";
-    width: .5em;
-    height: .5em;
-    background-color:#38ada9; 
-    position: absolute;
-    bottom:0%;
-    left:50%;
-    transform: translate(-50%,50%) rotate(45deg);
-}
-.contact-title{
-    font-size: 2em;
-    border-bottom: 2px solid #a4b0be;
-    padding: .5em .5em;
-    color:#a4b0be;
-    position: relative;
-}
-.contact-title::before{
-    content: "";
-    width: .5em;
-    height: .5em;
-    background-color:#a4b0be; 
-    position: absolute;
-    bottom:0%;
-    left:50%;
-    transform: translate(-50%,50%) rotate(45deg);
-}
-.about-title,.blog-title,.contact-title{
     margin-bottom: 2em;
+}
+.title::before{
+    content: "";
+    width: .4em;
+    height: .4em;
+    background-color:#fff;
+    border:3px solid #2d3436; 
+    position: absolute;
+    bottom:0%;
+    left:50%;
+    transform: translate(-50%,50%) rotate(45deg);
 }
 img{
     width:100%;
@@ -311,12 +279,16 @@ img{
     }
     input[type="text"]:focus,input[type="text"]:hover{
         outline: none;
-        width: 20rem;
+        width: 70%;
     }
     h1{
         font-size: 5rem;
     }
     .friends a{
         width: 45%;
+    }
+    .totop{
+        right:1rem;
+        bottom:1rem;
     }
 }
