@@ -203,12 +203,16 @@ img{
     float: left;
     display: inline-block;
 }
+#blog a{
+    color:#2d3436;
+}
 .hover{
     transition: all .25s ease;
 }
 
 .hover:hover{
-    background-color:#6a89cc;
+    background-color:#2d3436;
+    color:#fff;
 }
 #footer{
     background-color: #2d3436;
