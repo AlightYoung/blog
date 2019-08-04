@@ -131,10 +131,9 @@ input[type="submit"]:focus{
 h1{
     margin:0;
     padding:0;
-    height: 6rem;
+    padding-bottom:1rem;
     color: #2d3436;
     font-size:6rem;
-    line-height:6rem;
     text-align: center;
 }
 .totop{
@@ -313,6 +312,9 @@ img{
     input[type="text"]:focus,input[type="text"]:hover{
         outline: none;
         width: 20rem;
+    }
+    h1{
+        font-size: 5rem;
     }
     .friends a{
         width: 45%;
