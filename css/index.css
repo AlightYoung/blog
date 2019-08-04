@@ -16,25 +16,26 @@
 ul{
     margin-bottom: 0;
 }
-.container-fulid{
-    height: 100vh;
-    box-sizing: border-box;
-}
 #home{
     background-color:#fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    height:100vh;
 }
 #blog,#about,#contact{
-    padding-top: 10vh;
     text-align: center;
+    height: auto;
+    padding:10vh 0 3rem 0;
 }
 #blog,#contact{
     background-color: #f9fafc;
 }
 #about{
     background-color: white;
+}
+#contact{
+    min-height: 100vh;
 }
 a{
     color:#7f8fa6;
@@ -100,13 +101,13 @@ input[type="text"]{
     width: 10rem;
     height: 5.6rem;
     line-height: 5.6rem;
-    border:none;
     border-radius:5.6rem 0 0 5.6rem;
     text-align: center;
     transition: all .25s ease;
     box-sizing: border-box;
     border:1px solid #2d3436;
     font-size: 1.25em;
+    max-width: 100vw;
     overflow: hidden;
 }
 input[type="text"]:focus,input[type="text"]:hover{
@@ -116,9 +117,13 @@ input[type="text"]:focus,input[type="text"]:hover{
 input[type="submit"]{
     width: 10rem;
     height: 5.6rem;
+    transition: all .25s ease;
     border:none;
     border-radius: 0 5.6rem 5.6rem 0;
     font-size: 1.25em;
+}
+input[type="submit"]:hover{
+    background-color: #000;
 }
 input[type="submit"]:focus{
     outline: none;
@@ -126,10 +131,10 @@ input[type="submit"]:focus{
 h1{
     margin:0;
     padding:0;
-    height: 2em;
+    height: 6rem;
     color: #2d3436;
-    font-size:3em;
-    line-height:2em;
+    font-size:6rem;
+    line-height:6rem;
     text-align: center;
 }
 .totop{
@@ -238,7 +243,40 @@ img{
 .hover:hover{
     background-color:#6a89cc;
 }
-@media(max-width: 786px){
+#footer{
+    background-color: #2d3436;
+    color:#eee;
+    width: 100%;
+    padding:1rem 1rem 1rem 1rem;
+}
+.center{
+    width: 100%;
+    text-align: center;
+}
+.fl{
+    font-size: 2rem;
+    padding-left:1rem;
+    margin-bottom: 1rem;
+    border-left:5px solid #5fb878;
+    box-sizing: border-box;
+    user-select: none;
+}
+.friends{
+    padding-bottom:1rem;
+
+}
+.friends a{
+    display: inline-block;
+    width:33%;
+    padding: 1rem;
+    height:1rem;
+    color:#aaa;
+    box-sizing: border-box;
+}
+.friends a:hover{
+    color:#fff;
+}
+@media(max-width: 900px){
     .search{
         font-size:1em;
     }
@@ -263,5 +301,20 @@ img{
         padding-left: .1em;
         letter-spacing: .1em;
     }
-    
+    .totop{
+        bottom:2em;
+    }
+    input[type="text"]{
+        width: 8rem;
+    }
+    input[type="submit"]{
+        width: 8rem;
+    }
+    input[type="text"]:focus,input[type="text"]:hover{
+        outline: none;
+        width: 20rem;
+    }
+    .friends a{
+        width: 45%;
+    }
 }

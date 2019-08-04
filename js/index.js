@@ -26,32 +26,22 @@ $(".mobileitems").hide();
             $('html,body').animate({scrollTop: ($($(this).attr('href')).offset().top )},500);
             $(this).addClass("active");
             $(this).siblings().removeClass("active");
-            //----------------多余删掉--------------------
-            // var to = $(this).attr("href");
-            // if(to=="#home"){    
-            //     $("#top").css("background-color","#fab1a0");
-            // }else if(to=="#blog"){
-            //     $("#top").css("background-color","#6a89cc");
-            // }else if(to=="#about"){
-            //     $("#top").css("background-color","#38ada9");
-            // }else if(to=="#contact"){
-            //     $("#top").css("background-color","#a4b0be");
-            // }
+
         });
         //禁止导航栏滚动
         //to do...
         //css样式 touch-action:none;
         
         //页面初始化scrollTop判断
-         if($(window).scrollTop()>=($(window).height())*3){
+         if($(window).scrollTop()>=$("#about").offset().top+$("#about").height()){
                 $(".contact").addClass("active");
                 $(".contact").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
-            }else if($(window).scrollTop()>=($(window).height())*2){
+            }else if($(window).scrollTop()>=$("#about").offset().top-1){
                 $(".about").addClass("active");
                 $(".about").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
-            }else if($(window).scrollTop()>=$(window).height()){
+            }else if($(window).scrollTop()>=$("#blog").offset().top-1){
                 $(".blog").addClass("active");
                 $(".blog").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
@@ -60,17 +50,22 @@ $(".mobileitems").hide();
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
             }
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $(".totop").hide();
+            }else{
+                $(".totop").show();
+            }
         //页面滚动监听改变navbar颜色及当前分类切换
         $(window).on("scroll",function(){
-            if($(window).scrollTop()>=($(window).height())*3){
+            if($(window).scrollTop()>=$("#about").offset().top+$("#about").height()){
                 $(".contact").addClass("active");
                 $(".contact").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
-            }else if($(window).scrollTop()>=($(window).height())*2){
+            }else if($(window).scrollTop()>=$("#about").offset().top-1){
                 $(".about").addClass("active");
                 $(".about").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
-            }else if($(window).scrollTop()>=$(window).height()){
+            }else if($(window).scrollTop()>=$("#blog").offset().top-1){
                 $(".blog").addClass("active");
                 $(".blog").siblings().removeClass("active");
                 $(".totop").css("opacity",".5");
@@ -78,6 +73,11 @@ $(".mobileitems").hide();
                 $(".home").addClass("active");
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
+            }
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $(".totop").hide();
+            }else{
+                $(".totop").show();
             }
             
         });
