@@ -8,6 +8,7 @@
     padding:0;
     list-style: none;
     font-family: montserrat;
+    box-sizing: border-box;
 }
 .theme-btn{
     background-color: #2d3436;
@@ -29,7 +30,7 @@ ul{
     padding:10vh 0 3rem 0;
 }
 #blog,#contact{
-    background-color: #f9fafc;
+    background-color: #eeeeee;
 }
 #about{
     background-color: white;
@@ -98,7 +99,7 @@ form{
     font-size:1.6em;
     margin-bottom: 6em;
 }
-input[type="text"]{
+.search input[type="text"]{
     display: inline-block;
     width: 10rem;
     height: 5.6rem;
@@ -112,11 +113,11 @@ input[type="text"]{
     max-width: 100vw;
     overflow: hidden;
 }
-input[type="text"]:focus,input[type="text"]:hover{
+.search input[type="text"]:focus,.search input[type="text"]:hover{
     outline: none;
     width: 16em;
 }
-input[type="submit"]{
+.search input[type="submit"]{
     display: inline-block;
     width: 10rem;
     height: 5.6rem;
@@ -125,10 +126,10 @@ input[type="submit"]{
     border-radius: 0 5.6rem 5.6rem 0;
     font-size: 1.25em;
 }
-input[type="submit"]:hover{
+.search input[type="submit"]:hover{
     background-color: #000;
 }
-input[type="submit"]:focus{
+.search input[type="submit"]:focus{
     outline: none;
 }
 h1{
@@ -147,7 +148,7 @@ h1{
     position: fixed;
     bottom:2em;
     right: 2em;
-    color:white;
+    color:#fff;
     text-align: center;
     line-height: 5em;
     transition: all .5s ease;
@@ -175,9 +176,9 @@ h1{
     line-height: 2em;
     box-sizing: border-box;
 }
-.row{
+.mrow{
     width: 80%;
-    margin:0 auto;
+    margin:1rem auto;
 }
 .title{
     font-size: 2em;
@@ -185,7 +186,7 @@ h1{
     padding: .5em .5em;
     color:#2d3436;
     position: relative;
-    margin-bottom: 2em;
+    margin-bottom: 1rem;
 }
 .title::before{
     content: "";
@@ -199,12 +200,33 @@ h1{
     transform: translate(-50%,50%) rotate(45deg);
 }
 img{
-    width:100%;
-    float: left;
+    width:90%;
     display: inline-block;
+    border-radius: 1rem;
+    transition: all .25s ease;
+    box-shadow: 0 0 1rem #abb1ba;
+    margin:1rem;
+}
+.btn{
+    width: auto;
+    height: auto;
+    border:.2rem solid black;
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition:all .5s ease;
+}
+.btn:hover{
+    color:white;
+    background-color: black;
 }
 #blog a{
     color:#2d3436;
+}
+.blogitem{
+    width: 33%;
+    display: inline-block;
+    padding: 1rem;
 }
 .hover{
     transition: all .25s ease;
@@ -247,6 +269,68 @@ img{
 .friends a:hover{
     color:#fff;
 }
+.about-left{
+    width: 49%;
+    height:auto;
+    display: inline-block;
+    float: left;
+
+}
+.about-right{
+    width: 49%;
+    padding:2rem;
+    height:auto;
+    float: left;
+}
+p{
+    font-family: arial;
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.5rem;
+    margin:1.5rem auto;
+    letter-spacing: .1rem;
+}
+.contact-body{
+   width: 80%;
+   text-align: center;
+}
+input{
+    margin:0;
+    padding:0;
+}
+.box{
+    width: 96%;
+    padding:2rem;
+    margin:2rem;
+}
+input,textarea{
+    display: inline-block;
+    padding: 1rem;
+}
+.box input{
+    width: 80%;
+    height:5rem;
+    margin:1rem;
+}
+.box input:focus, textarea:focus{
+    outline: none;
+}
+textarea{
+    width: 80%;
+    height:30rem;
+    margin:1rem;
+}
+.box input[type="submit"]{
+    background-color: #666;
+    color: #ccc;
+    border: none;
+    transition:all .5s ease;
+}
+.box input[type="submit"]:hover{
+    background-color: #000;
+    color: #fff;
+}
 @media(max-width: 900px){
     .search{
         font-size:1em;
@@ -275,13 +359,13 @@ img{
     .totop{
         bottom:2em;
     }
-    input[type="text"]{
+    .search input[type="text"]{
         width: 8rem;
     }
-    input[type="submit"]{
+    .search input[type="submit"]{
         width: 8rem;
     }
-    input[type="text"]:focus,input[type="text"]:hover{
+    .search input[type="text"]:focus,.search input[type="text"]:hover{
         outline: none;
         width: 70%;
     }
@@ -289,10 +373,36 @@ img{
         font-size: 5rem;
     }
     .friends a{
-        width: 45%;
+        width: 49%;
     }
     .totop{
         right:1rem;
         bottom:1rem;
+    }
+    .blogitem{
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .about-left,.about-right{
+        width: 100%;
+    }
+    .about-right{
+        text-align: left;
+    }
+    p{
+        width: 100%;
+        margin:1rem auto;
+    }
+    .box{
+        width: 100%;
+        margin:1rem auto;
+        padding: 0;
+    }
+    .box input{
+        margin:1rem 0;
+    }
+    textarea{
+        height:14rem;
     }
 }

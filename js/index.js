@@ -50,11 +50,11 @@ $(".mobileitems").hide();
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
              }
-            // if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            //     $(".totop").hide();
-            // }else{
-            //     $(".totop").show();
-            // }
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $(".totop").hide();
+            }else{
+                $(".totop").show();
+            }
         //页面滚动监听改变navbar颜色及当前分类切换
         $(window).on("scroll",function(){
             if($(window).scrollTop()>=$("#about").offset().top+$("#about").height()){
@@ -74,11 +74,11 @@ $(".mobileitems").hide();
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
             }
-            // if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            //     $(".totop").hide();
-            // }else{
-            //     $(".totop").show();
-            // }
+            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+                $(".totop").hide();
+            }else{
+                $(".totop").show();
+            }
             
         });
         //点击返回顶部
