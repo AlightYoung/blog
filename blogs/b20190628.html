@@ -1,119 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../css/layui.css">
-<link rel="stylesheet" type="text/css" href="../css/header.css">
-<script type="text/javascript" src="../js/layui.js"></script>
-<title>博客</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>blog</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/blog.css">
 </head>
 <body>
-	<!--导航-->
-     <div class="layui-container-fulid">
-		<ul class="layui-nav layui-row" lay-filter="">
-			<li class="layui-nav-item"><a href="../index.html">ALIGHT</a></li>
-				<li class="layui-nav-item right"><a href="about.html">关于</a></li>
-				<li class="layui-nav-item right"><a href="friends.html">友链</a></li>
-				<li class="layui-nav-item layui-this right"><a href="blog.html">博客</a></li>
-			</span>
-		</ul>
-	</div>
-	<!--目录-->
-	<div class="layui-container">
-		<div class="layui-col-xs3 layui-hide-xs">
-			<fieldset class="layui-elem-field layui-field-title">
-				<legend>目录</legend>
-			</fieldset>
-			<ul>
-				<a href="#">
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis"></i>
-					<div class="layui-timeline-content layui-text">
-						<div class="layui-timeline-title">Bootstrap简介</div>
-					</div>
-				</li>
-				</a>
-				<a href="#">
-					<li class="layui-timeline-item">
-						<i class="layui-icon layui-timeline-axis"></i>
-						<div class="layui-timeline-content layui-text">
-						<div class="layui-timeline-title">包含内容</div>
-						</div>
-					</li>
-				</a>
-				<a href="#">
-					<li class="layui-timeline-item">
-						<i class="layui-icon layui-timeline-axis"></i>
-						<div class="layui-timeline-content layui-text">
-						<div class="layui-timeline-title">支持组件</div>
-						</div>
-					</li>
-				</a>
-				<li class="layui-timeline-item">
-					<i class="layui-icon layui-timeline-axis"></i>
-					<div class="layui-timeline-content layui-text">
-						<div class="layui-timeline-title">支持插件</div>
-					</div>
-				</li>
-			</ul>
+	<div class="container">
+		<div class="top">
+            <div class="title"><a href="blogs.html"><i class="fa fa-book" aria-hidden="true"><i>Blog</i></i></a></div>
+            <div class="main"><a href="../index.html"><i class="fa fa-home"></i></a> </div>
+        </div>
+		<div class="b-title">Bootstarp了解<br/><div style="font-size: .6rem;color:#999;padding:2rem 0;">2019-06-28 &nbsp -AlightY</div></div>
+		<div class="b-content">
+			Bootstrap是美国Twitter公司的设计师Mark Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。
 		</div>
-		<!--博文主体-->
-		<div class="layui-col-xs9">
-			<fieldset class="layui-elem-field layui-field-title">
-				<legend>正文</legend>
-			</fieldset>
-			<fieldset class="layui-elem-field">
-			  <legend>Bootstrap简介</legend>
-			  <div class="layui-field-box">
-			    <p>
-			    	Bootstrap是美国Twitter公司的设计师Mark Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来
-			    </p>
-			  </div>
-			</fieldset>
-			<fieldset class="layui-elem-field">
-			  <legend>包含内容</legend>
-			  <div class="layui-field-box">
-			  	<ul>
-			  		<li>基本结构：Bootstrap 提供了一个带有网格系统、链接样式、背景的基本结构。这将在Bootstrap 基本结构部分详细讲解。</li>
-			  		<li>CSS：Bootstrap 自带以下特性：全局的 CSS设置、定义基本的 HTML 元素样式、可扩展的 class，以及一个先进的网格系统。这将在Bootstrap CSS部分详细讲解。</li>
-			  		<li>组件：Bootstrap 包含了十几个可重用的组件，用于创建图像、下拉菜单、导航、警告框、弹出框等等。这将在布局组件部分详细讲解。</li>
-			  		<li>JavaScript 插件：Bootstrap包含了十几个自定义的jQuery 插件。您可以直接包含所有的插件，也可以逐个包含这些插件。这将在Bootstrap插件部分详细讲解。</li>
-			  		<li>定制：您可以定制Bootstrap的组件、LESS 变量和jQuery 插件来得到您自己的版本。</li>
-			  	</ul>
-			  </div>
-			</fieldset>
-			<fieldset class="layui-elem-field">
-			  <legend>支持组件</legend>
-			  <div class="layui-field-box">
-			    <p>
-			    	Bootstrap中包含了丰富的Web组件，根据这些组件，可以快速的搭建一个漂亮、功能完备的网站。其中包括以下组件：
-下拉菜单、按钮组、按钮下拉菜单、导航、导航条、路径导航、分页、排版、缩略图、警告对话框、进度条、媒体对象等
-			    </p>
-			  </div>
-			</fieldset>
-			<fieldset class="layui-elem-field">
-			  <legend>支持插件</legend>
-			  <div class="layui-field-box">
-			    <p>
-			    	Bootstrap自带了13个jQuery插件，这些插件为Bootstrap中的组件赋予了“生命”。其中包括：
-模式对话框、标签页、滚动条、弹出框等。
-			    </p>
-			  </div>
-			</fieldset>
-		</div>
+		<div class="footer"></div>
 	</div>
-	</div>
-	<!--Layui模块的引用-->
-	<script>
-		layui.use('element', function(){
-		var element = layui.element; 
-	
-		element.on('nav(demo)', function(elem){
-			layer.msg(elem.text());
-			});
-		});
-	</script>
 </body>
 </html>
