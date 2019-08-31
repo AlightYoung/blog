@@ -40,10 +40,14 @@ ul{
 }
 a{
     color:#aaa;
+    text-decoration: none;
 }
 a:hover{
     cursor: pointer;
     color: #f5f6fa;
+    text-decoration: none;
+}
+a:visited,a:link,a:active{
     text-decoration: none;
 }
 body{
