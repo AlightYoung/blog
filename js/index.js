@@ -74,7 +74,8 @@ $(".mobileitems").hide();
                 $(".home").siblings().removeClass("active");
                 $(".totop").css("opacity","0"); 
             }
-            if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+            // 顶部隐藏返回底部
+            if ($(window).scrollTop() + $(window).height()+10 >= $(document).height()) {
                 $(".totop").hide();
             }else{
                 $(".totop").show();
